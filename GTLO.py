@@ -1,75 +1,5 @@
-#-----------------[ IMPORT-MODULE ]-------------------
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-try:
-        import rich
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
-        os.system('pip install rich')
-try:
-        import stdiomask
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
-        os.system('pip install stdiomask')
-try:
-	import requests
-except ImportError:
-	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
-	os.system('pip install requests && pip install mechanize ')
-#------------------[ USER-AGENT ]-------------------#
-pretty.install()
-CON=sol()
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
-except Exception as e:
-	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mDINDA_CANTIK')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(10000):
-	a='Mozilla/5.0 (Symbian/3; Series60/'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Nokia'
-	e=random.randrange(100, 9999)
-	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
-
-
-	aa='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='ALE-L21 Build/HuaweiALE-'
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko)'
-	h=random.randrange(73,100)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
+#-except ImportError:
+	cetak((40,150)
 	l='Kiwi Chrome/69.1.3440.40 Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
@@ -1121,8 +1051,6 @@ if __name__=='__main__':
 	try:os.system('clear')
 	except:pass
 	#alvino_xy(f'\n\t{x}——> {h}Gunakan Script Ini Sewajarnya\n\t{x}——> {h}Jika Ada Bug/Error Bilang Yahh\n\t{x}——> {h}Alvino Sehat Selalu Yah\n\t{x}——> {h}Semoga Di Mudahkan Rezekinya Amin\n\t{x}——> {h}Semoga Harimu Menyenangkan Sayang{x}')
-	time.sleep(3)
-	login()
+	()
 
-#>>>>> THANKS TO THIS HERE <<<<<<<#
-#>>>>> DINDA CANTIK <<<<<#
+
